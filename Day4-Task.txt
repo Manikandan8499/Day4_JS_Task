@@ -1,0 +1,94 @@
+Q2. Resume in JSON format.
+
+{
+    "Firstname": "Manikandan",
+    "Lastname": "V",
+    "email-ID": "manikandan@gmail.com",
+    "mobile-no": 75012121313212121,
+    "Highest-Educational-Qualification": "B.E-ECE",
+    "Educational-details": [{
+        "Percentage" : [{
+            "10th": "93.4%",
+            "12th": "85.9%",
+            "B.E": "89%"
+        }],
+        "Educational-Institution" : [{
+            "10th": "Govt Boys Hr.Sec.School",
+            "12th": "Reliance Matric Hr.Sec.School",
+            "B.E": "K.S.Rangasamy College of Technology"
+        }]
+    }],
+    "Currently-Working in": "HCL Technologies",
+    "Working as": "Software Engineer",
+    "Year of Experience": 3.2,
+    "Working location": "Chennai",
+    "Professional-Summary" : [
+        "Expertise in Network Security software application",
+        "Expertise in C,C++,JAVA,SHELL & POWERSHELL SCRIPT"
+    ],
+    "Hobbies" : "Playing Cricket",
+    "Project-Details" : "Windows 10 STIG hardening",
+    "Roles and Responsibility" : [
+        "Analyzing the Requirement documents and clarifying queries with business making necessary code changes",
+        "Observing issues and find solution to fix code changes and software application development activities",
+        "Preparing technical design documents and test cases",
+        "Mapping data files, creating formulas, functions, development of logic",
+        "Testing the application end to end"
+    ],
+    "Personnel-details" : [{
+        "Permanent-Address" : "XXXXX",
+        "Current-Address" : "XXXXXX",
+        "known-Languages" : "English,Tamil",
+        "Passport-no": "V1234567"
+    }
+    ]
+}
+
+
+Q1. JSON iteration 
+
+const jsonObject ={
+"name" : "Manikandan",
+"age" : 24,
+"Educatinal-Qualification" : "B.E-ECE",
+"language" : ["Tamil", "English"],
+"location" : "Chennai",
+}
+
+for (var key in jsonObject)
+{
+console.log(key,jsonObject[key])
+}
+
+
+//b. Using for-of :
+
+const Language = jsonObject.language;
+
+for(var lang of Language)
+{
+console.log(lang)
+}
+
+// C. Using ForEach
+
+Language.forEach(Lang =>{
+    console.log(Lang);
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
